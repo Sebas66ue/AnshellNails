@@ -30,8 +30,8 @@ const logoutOwnerBtn = document.getElementById("logoutOwnerBtn");
 const ownerLoginSection = document.getElementById("adminLoginSection");
 const ownerOnlySections = document.querySelectorAll(".owner-only");
 
-const OWNER_NAME = "Heaven Ulabarri";
-const OWNER_PASSWORD = "micielito";
+const OWNER_NAME = "Marjorie Ulabarri";
+const OWNER_PASSWORD = "0110";
 const LEGACY_OWNER_PASSWORD = "micielito0";
 const OWNER_SESSION_KEY = "nailsSpaOwnerSession";
 

@@ -271,6 +271,19 @@ textarea {
   border-radius: 24px;
 }
 
+.hero-special-image {
+  position: absolute;
+  right: 16px;
+  bottom: 18px;
+  width: 82%;
+  max-width: 430px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 32px;
+  box-shadow: 0 24px 48px rgba(90, 64, 74, 0.18);
+  border: 1px solid rgba(31, 18, 35, 0.06);
+}
+
 .feature-badge {
   position: absolute;
   top: 20px;

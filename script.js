@@ -1,6 +1,6 @@
-const supabaseUrl = "https://rgxybkmglfdxrgluzfwc.supabase.co";
+const supabaseUrl = "https://jggcrflvttbofnremnjf.supabase.co";
 const supabaseKey =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJneHlia21nbGZkeHJnbHV6ZndjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODgyMDc3MzYsImV4cCI6MjEwMzc4MzczNn0.HhocvsjUxVuNW78sVTJmfNDJmrBb_TsU6KvIAscDsJI";
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpnZ2NyZmx2dHRib2ZucmVtbmpmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODgyODMwNzMsImV4cCI6MjEwMzg1OTA3M30.SVKarBLh8It81Rg6LUDcXlb_6Gim2j51evnX2aUx7kc";
 
 const sb = window.supabase.createClient(supabaseUrl, supabaseKey);
 

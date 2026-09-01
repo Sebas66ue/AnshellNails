@@ -32,7 +32,7 @@ const ownerOnlySections = document.querySelectorAll(".owner-only");
 
 const OWNER_NAME = "Marjorie Ulabarri";
 const OWNER_PASSWORD = "0110";
-const LEGACY_OWNER_PASSWORD = "micielito0";
+const LEGACY_OWNER_PASSWORD = "01100";
 const OWNER_SESSION_KEY = "nailsSpaOwnerSession";
 
 const state = {

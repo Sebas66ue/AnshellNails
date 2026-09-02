@@ -154,7 +154,7 @@ function unlockOwnerAccess(username, password) {
     (safePassword === OWNER_PASSWORD || safePassword === LEGACY_OWNER_PASSWORD)
   ) {
     setOwnerAccess(true);
-    showToast("Bienvenido, Heaven.");
+    showToast("Bienvenida, Marjorie.");
     return true;
   }
 

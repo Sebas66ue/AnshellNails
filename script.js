@@ -6,7 +6,7 @@ const sb = window.supabase.createClient(supabaseUrl, supabaseKey);
 
 const form = document.getElementById("bookingForm");
 const toast = document.getElementById("toast");
-const creatorEmail = "anshell1013@gmail.com";
+const phoneNumber = "573165009643";
 
 const appointmentsList = document.getElementById("appointmentsList");
 const appointmentsCount = document.getElementById("appointmentsCount");
@@ -183,9 +183,10 @@ function buildAppointmentMessage(appointment, action = "Nueva cita agendada") {
   ].join("\n");
 }
 
-function sendEmail(subject, body) {
-  const mailtoUrl = `mailto:${creatorEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  window.location.href = mailtoUrl;
+function sendWhatsApp(message) {
+  const phoneNumber = "573165009643"; // Cambia este número
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  window.location.href = whatsappUrl;
 }
 
 async function loadAvailability() {
@@ -610,17 +611,16 @@ async function submitBooking(event) {
   if (updateError) {
     console.error("Error bloqueando disponibilidad:", updateError);
   }
-
-  sendEmail(
-    `Nueva cita agendada - ${name}`,
-    buildAppointmentMessage(
-      {
-        ...appointment,
-        created_at: appointment.created_at
-      },
-      "Se ha agendado una nueva cita"
-    )
-  );
+  
+sendWhatsApp(
+  buildAppointmentMessage(
+    {
+      ...appointment,
+      created_at: appointment.created_at
+    },
+    "Se ha agendado una nueva cita"
+  )
+);
 
   form.reset();
   state.selectedDate = "";
